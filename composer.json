@@ -1,0 +1,21 @@
+{
+    "name": "github",
+    "description": "github",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+      {
+        "name": "fox",
+        "email": "email@example.com"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "App\\": "src/"
+      }
+    },
+    "require": {
+      "ext-mbstring": "*",
+      "ext-json": "*"
+    }
+  }
