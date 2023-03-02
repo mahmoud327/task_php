@@ -9,7 +9,7 @@ $date = '2022-01-01';
 
 
 // Get the top 10 most popular repositories
-$popularRepos = $github->getPopularRepositories($date, 10);
+$popularRepos = $github->getPopularRepositoriesFromDate($date, 10);
 
 // Get the top 50 most popular repositories created from a given date onwards
 $popularReposFromDate = $github->getPopularRepositoriesFromDate($date, 50);

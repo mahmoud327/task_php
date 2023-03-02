@@ -6,12 +6,6 @@ class GitHubAPI  implements methods
 {
     private $base_url = "https://api.github.com/search/repositories";
 
-    public function getPopularRepositories($date, $limit)
-    {
-        $url = $this->base_url . "?q=created:>$date&sort=stars&order=desc&per_page=$limit";
-        $data = $this->fetchData($url);
-        return $data['items'];
-    }
 
 
     public function getPopularRepositoriesFromDate($date, $limit)
